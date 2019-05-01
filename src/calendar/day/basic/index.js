@@ -92,6 +92,7 @@ class Day extends Component {
     
     if (this.props.state === 'today') {
       textStyle.push(this.style.todayText);
+      containerStyle.push(this.style.todayContainer)
     }
 
     return (

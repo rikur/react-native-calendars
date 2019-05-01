@@ -30,6 +30,9 @@ export default function styleConstructor(theme={}) {
       color: appStyle.todayTextColor,
       fontFamily: appStyle.todayFontFamily
     },
+    todayContainer: {
+      backgroundColor: selectedDayTextColor
+    }
     selectedText: {
       color: appStyle.selectedDayTextColor
     },
