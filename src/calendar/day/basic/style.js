@@ -32,7 +32,7 @@ export default function styleConstructor(theme={}) {
     },
     todayContainer: {
       backgroundColor: selectedDayTextColor
-    }
+    },
     selectedText: {
       color: appStyle.selectedDayTextColor
     },
