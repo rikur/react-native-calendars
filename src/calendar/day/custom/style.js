@@ -1,7 +1,7 @@
 import {StyleSheet, Platform} from 'react-native';
 import * as defaultStyle from '../../../style';
 
-const STYLESHEET_ID = 'stylesheet.day.basic';
+const STYLESHEET_ID = 'stylesheet.day.single';
 
 export default function styleConstructor(theme={}) {
   const appStyle = {...defaultStyle, ...theme};
@@ -27,31 +27,13 @@ export default function styleConstructor(theme={}) {
       borderRadius: 16
     },
     todayText: {
-      color: appStyle.todayTextColor,
-      fontFamily: appStyle.todayFontFamily
+      color: appStyle.todayTextColor
     },
-    todayContainer: {
-      backgroundColor: selectedDayTextColor
-    }
     selectedText: {
       color: appStyle.selectedDayTextColor
     },
     disabledText: {
       color: appStyle.textDisabledColor
-    },
-    dot: {
-      width: 4,
-      height: 4,
-      marginTop: 1,
-      borderRadius: 2,
-      opacity: 0
-    },
-    visibleDot: {
-      opacity: 1,
-      backgroundColor: appStyle.dotColor
-    },
-    selectedDot: {
-      backgroundColor: appStyle.selectedDotColor
     },
     ...(theme[STYLESHEET_ID] || {})
   });
