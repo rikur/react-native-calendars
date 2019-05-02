@@ -77,7 +77,7 @@ class Day extends Component {
       containerStyle.push(this.style.todayContainer);
     }
 
-    if(marking.holy)
+    if(!isDisabled && marking.holy)
       textStyle.push(this.style.holyText);
 
     return (
