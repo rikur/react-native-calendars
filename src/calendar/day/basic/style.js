@@ -32,7 +32,7 @@ export default function styleConstructor(theme={}) {
     },
     holyText: {
       color: appStyle.failedColor,
-      fontFamily: appStyle.todayFontFamily
+      fontFamily: appStyle.todayFontFamily,
       fontWeight: 500,
     },
     todayContainer: {
